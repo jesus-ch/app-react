@@ -35,11 +35,11 @@ function Products() {
                                     <div class="card">
                                         <img src={product.image} className="m-3" style={{ height: "300px", width: "auto", objectFit: "contain" }} alt={product.title} />
                                         <div className="m-3 mb-0">
-                                            <small className="card-title">{product.title.substring(0, 50)}...</small>
+                                            <small className="titulo">{product.title.substring(0, 50)}...</small>
                                         </div>
-                                        <div style={{ marginTop: "auto" }}>
+                                        <div className="divInferior">
                                             <div className="d-flex justify-content-between align-items-center">
-                                                <div className="m-3"><b>${product.price}</b></div>
+                                                <div className="m-3">Precio: <b>${product.price}</b></div>
                                                 <NavLink className="stretched-link" to={`/product/${product.id}`}>
                                                     <button className="btn btn-sm m-3 border-primary">
                                                         <i className="fa fa-arrow-right text-muted"></i>

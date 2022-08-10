@@ -12,20 +12,29 @@
        
  }
  .card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
     transition: 0.3s;
-    height: 550px;
+    height: 500px;
     width: auto;
-    padding-right: 10px;
+    /* padding-right: 10px; */
+    margin-right: 15px;
+    
  
 }
-  
-  /* On mouse-over, add a deeper shadow */
   .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(33, 205, 244, 0.834);
+    border-radius: 20px;
   }
-  
-  /* Add some padding inside the card container */
   .container {
     padding: 2px 16px;
   }
+.ivInferior{
+    margin-top: "auto";
+    
+}
+.titulo{
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    text-decoration: underline;
+}
