@@ -52,7 +52,6 @@ function Products() {
                             )
                         })}
                     </div>
-
                 </div>
             </>
         )

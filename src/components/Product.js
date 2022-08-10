@@ -13,7 +13,6 @@ function Product() {
         }
         getProduct();
     }, [id]);
-
     
     const VerDetalle = () => {
         return (
@@ -28,20 +27,20 @@ function Product() {
                         </NavLink>
                         <div>
                             <div className="row">
-                                <div className="col-md-6">
+                                <div className="col-md-6 cardDetalle">
                                     <div className="images p-3">
                                         <div className="text-center p-4">
                                             <img id="main-image" alt="product" src={product.image} width="250" />
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-md-6">
-                                    <div className="border p-4">
+                                <div className="col-md-6 ">
+                                    <div className="border p-4 cardDetalle">
                                         <div className="mt-4 mb-3">
 
-                                        <span className="text-muted text-capitalize"> in {product.category}</span>
+                                        <span className="text-muted text-capitalize subtitulodetalle"> in {product.category}</span>
 
-                                            <h5 className="text-uppercase">
+                                            <h5 className="titulo">
                                                 {product.title}
                                             </h5>
 
@@ -52,7 +51,7 @@ function Product() {
                                                 <big className="display-6"><b>${product.price}</b></big>
                                             </div>
                                         </div>
-                                        <p className="text-muted">{product.description}</p>
+                                        <p className="description">{product.description}</p>
                                         
                                     </div>
                                 </div>
