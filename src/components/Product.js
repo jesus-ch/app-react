@@ -1,14 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router';
-import Skeleton from 'react-loading-skeleton';
 import { NavLink } from 'react-router-dom';
 
 function Product() {
-
     const { id } = useParams();
     const [product, setProduct] = useState([]);
-    
-
     useEffect(() => {
         const getProduct = async () => {
             const response = await fetch(`https://fakestoreapi.com/products/${id}`);
@@ -57,7 +53,7 @@ function Product() {
                                             </div>
                                         </div>
                                         <p className="text-muted">{product.description}</p>
-                                        <div className="cart mt-4 align-items-center"> <button className="btn btn-outline-dark text-uppercase mr-2 px-4">Buy</button> </div>
+                                        
                                     </div>
                                 </div>
                             </div>
