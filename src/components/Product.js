@@ -15,7 +15,7 @@ function Product() {
     }, [id]);
 
     
-    const ShowDetails = () => {
+    const VerDetalle = () => {
         return (
             <>
                 <div className="row d-flex justify-content-center">
@@ -68,7 +68,7 @@ function Product() {
         <>
             <div className="container px-0 mb-5" style={{ marginTop: "66px" }}>
 
-                {<ShowDetails />}
+                {<VerDetalle />}
 
             </div>
         </>
