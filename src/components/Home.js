@@ -4,7 +4,7 @@ import Products from './Products';
 const Home = () => {
     return (
         <>
-            <div className="container px-0" style={{ marginTop: "66px" }}>
+            <div className="container px-0  " >
                 <Products />
             </div>
         </>
